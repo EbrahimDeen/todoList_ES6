@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Todo list</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </head>
+    <body>
+      <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 >Todo List</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                      
+                    <input onkeyup="stoppedTyping()" type="text" id="txt"  placeholder="Todo Item">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" >
+                        <button  id="btnAdd" onclick="verify()">Add</button>
+                        <button onclick="editLI()">Edit</button>
+                        <button onclick="deleteLI()">Delete</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                        <ul id="list">
+                                <li>HTML</li> 
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                                <li>PHP</li>
+                        </ul>
+                </div>
+
+            </div>
+
+      </div> 
+        
+        
+        <script src="javaScript.js"></script>
+         <!-- jQuery library -->
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+         <!-- Popper JS -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+ 
+         <!-- Latest compiled JavaScript -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    </body>
+</html>
